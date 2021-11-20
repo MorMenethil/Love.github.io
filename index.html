@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html xml:lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html xml:lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<title>生日快乐</title>
-        <link type="text/css" rel="stylesheet" href="./js/default.css">
+		<link type="text/css" rel="stylesheet" href="./js/default.css">
 		<script type="text/javascript" src="./js/jquery.min.js"></script>
 		<script type="text/javascript" src="./js/jscex.min.js"></script>
 		<script type="text/javascript" src="./js/jscex-parser.js"></script>
@@ -11,24 +13,28 @@
 		<script type="text/javascript" src="./js/jscex-async-powerpack.min.js"></script>
 		<script type="text/javascript" src="./js/functions.js" charset="utf-8"></script>
 		<script type="text/javascript" src="./js/love.js" charset="utf-8"></script>
-	    <style type="text/css">
-            html,
+		<style type="text/css">
+			html,
 			body {
 				width: 100%;
 				height: 100%;
 				display: flex;
 				align-items: center;
 			}
-            .fonts {
+
+			.fonts {
 				font-weight: 600;
 			}
-<!--
-.STYLE1 {color: #666666}
--->
-        </style>
-</head>
-    <body>
-        <audio autoplay="autopaly">
+
+			< !-- .STYLE1 {
+				color: #666666
+			}
+
+			-->
+		</style>
+	</head>
+	<body>
+		<audio autoplay muted>
 			<source src="http://music.163.com/song/media/outer/url?id=1475319299.mp3" type="audio/mp3" />
 		</audio>
 		<div id="main">
@@ -65,20 +71,18 @@
 			</div>
 
 		</div>
-    
-    <script>
-    </script>
 
-    <script>
+		<script>
+		</script>
+
+		<script>
 			(function() {
 				var canvas = $('#canvas');
-				$('audio')[0].play();
-				var musci = $('#go')
-				// canvas.click(
-				// 	function() {
-				// 		console.log(musci.play())
-				// 	}
-				// )
+				canvas.click(
+					function() {
+						$('audio')[0].muted = false
+					}
+				)
 				if (!canvas[0].getContext) {
 					$("#error").show();
 					return false;
